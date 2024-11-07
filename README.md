@@ -8,6 +8,7 @@ Getting Started
 API Endpoints
 Dependencies
 Developer
+
 Project Overview
 The Social Media Blog App backend is a REST API designed to handle the backend logic of a blog-oriented social media platform. It enables users to register, log in, and manage their personal blogs. Built using the Node.js runtime and MongoDB for data storage, this application manages user and blog data, allowing authenticated users to perform CRUD operations on their blog posts.
 
@@ -16,6 +17,7 @@ User Authentication: Secure authentication using password hashing and session ha
 Blog Management: Users can create, read, update, and delete their blogs, each of which is linked to the authenticated user.
 Data Storage: User and blog data are stored in MongoDB collections, with relationships established using Mongoose schemas and references.
 Session Transactions: Ensures that blog creation and updates are part of a session transaction for consistency.
+
 Getting Started
 Prerequisites
 Ensure you have the following installed:
@@ -27,18 +29,19 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/sujal-777/social-media-blog-app-backend.git
+git clone https://github.com/your-username/social-media-blog-app-backend.git
 cd social-media-blog-app-backend
 Install dependencies:
 
+bash
 Copy code
 npm install
 Run the application:
 
-arduino
+bash
 Copy code
 npm run start
-The API should now be running on http://localhost:5000 (or specified port).
+The API should now be running on http://localhost:3000 (or specified port).
 
 API Endpoints
 User Routes
