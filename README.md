@@ -1,4 +1,5 @@
-Social Media Blog App Backend REST API
+**Social Media Blog App Backend REST API**
+
 A backend REST API built with Node.js for a social media blog application, designed to handle user data and authentication while managing blog entries. This project enables users to create, read, update, and delete (CRUD) blogs and supports essential social media functionalities like user authentication and blog management.
 
 Table of Contents
@@ -29,30 +30,38 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/social-media-blog-app-backend.git
+git clone https://github.com/sujal-777/social-media-blog-app-backend.git
 cd social-media-blog-app-backend
 Install dependencies:
 
 bash
 Copy code
 npm install
+Set up environment variables: Create a .env file in the root directory of the project and add the following:
+
+plaintext
+Copy code
+MONGODB_URI="your-mongodb-connection-string"
 Run the application:
 
 bash
 Copy code
 npm run start
-The API should now be running on http://localhost:3000 (or specified port).
+The API should now be running on http://localhost:5000 (or specified port).
 
 API Endpoints
+
 User Routes
 POST /api/users/register: Register a new user
 POST /api/users/login: User login
+
 Blog Routes
 GET /api/blogs: Fetch all blogs
 POST /api/blogs: Create a new blog post
 PUT /api/blogs/:id: Update an existing blog post by ID
 DELETE /api/blogs/:id: Delete a blog post by ID
 GET /api/blogs/user/:id: Get all blogs created by a specific user
+
 Dependencies
 This project utilizes the following major dependencies:
 
@@ -60,6 +69,7 @@ express: Fast and minimalist web framework for Node.js.
 mongoose: Elegant MongoDB object modeling for Node.js.
 bcryptjs: Library for hashing passwords.
 jsonwebtoken: Library for generating and verifying JSON web tokens for secure user sessions.
+dotenv: Loads environment variables from a .env file.
 nodemon: Development utility that restarts the server on file changes.
 Refer to package.json for a full list of dependencies.
 
